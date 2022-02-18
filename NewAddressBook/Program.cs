@@ -34,6 +34,12 @@ namespace NewAddressBook
                         address.Display();
                         break;
 
+                    case 3:
+                        address.EditContacts();
+                        address.Display();
+                        break;
+
+
                     default:
                         Console.WriteLine("Invalid");
                         break;
