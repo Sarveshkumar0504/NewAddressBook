@@ -87,6 +87,11 @@ namespace NewAddressBook
             Display();
             Console.WriteLine("Successfully Added New Contacts");
         }
+
+        public Dictionary<string, AddressBook> Library;
+
+
+       
         public void Display()
         {
             foreach (string name in contacts.Keys)

@@ -28,26 +28,37 @@ namespace NewAddressBook
                     case 1:
                         address.CreateContact();
                         address.Display();
+                       
                         break;
 
                     case 2:
                         address.AddContacts();
                         address.Display();
+                        Console.WriteLine();
                         break;
 
                     case 3:
                         address.EditContacts();
                         address.Display();
+                        Console.WriteLine();
                         break;
 
                     case 4:
                         address.DeleteContacts();
                         address.Display();
+                        Console.WriteLine();
                         break;
 
                     case 5:
                         address.AddMultiple();
                         address.Display();
+                        Console.WriteLine();
+                        break;
+
+                    case 6:
+                        Console.WriteLine("Adding Multiple Address Books");
+                        AddMultiple library = new AddMultiple();
+                        library.AddAddressBook(address);
                         break;
 
                     default:
