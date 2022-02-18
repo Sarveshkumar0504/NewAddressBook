@@ -21,6 +21,7 @@ namespace NewAddressBook
             while (flag)
             {
                 Console.WriteLine("Enter Number to Execute the Address book Program \n1. Create contacts \n2. Add contact \n3. Edit contact \n4. Exit");
+                Console.WriteLine("\nEnter Number to Execute the Address book Program \n1. Create contacts \n2. Add contact \n3. Edit contact \n4. Delete Contact \n5. Add Multiple Contacts \n6. Exit");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -44,6 +45,10 @@ namespace NewAddressBook
                         address.Display();
                         break;
 
+                    case 5:
+                        address.AddMultiple();
+                        address.Display();
+                        break;
 
                     default:
                         Console.WriteLine("Invalid");
