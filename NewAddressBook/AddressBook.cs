@@ -60,6 +60,21 @@ namespace NewAddressBook
                 Console.WriteLine("erorr");
             }
         }
+
+        public void DeleteContacts()
+        {
+            Contact tempContact = new Contact();
+            tempContact.GetUserInfo();
+            string name = tempContact.GetName();
+            if (contacts.ContainsKey(name) is false)
+            {
+                contacts.Add(name, tempContact);
+            }
+            else
+            {
+                Console.WriteLine("erorr");
+            }
+        }
         public void Display()
         {
             foreach (string name in contacts.Keys)

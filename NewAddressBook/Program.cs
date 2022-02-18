@@ -39,6 +39,11 @@ namespace NewAddressBook
                         address.Display();
                         break;
 
+                    case 4:
+                        address.DeleteContacts();
+                        address.Display();
+                        break;
+
 
                     default:
                         Console.WriteLine("Invalid");
